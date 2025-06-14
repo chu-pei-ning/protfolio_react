@@ -1,0 +1,34 @@
+{
+  "home": "Home",
+  "about": "About",
+  "projects": "Projects",
+  "contact": "Contact me",
+  "switch_lang": "中文",
+
+  "home_title": "Hello, I’m Julia.",
+  "home_subtitle": "— a passionate web developer in the making.",
+  "home_intro1": "I love turning ideas into interactive websites and am constantly exploring new technologies.",
+  "home_intro2": "From paperwork to programming — I’ve found joy in solving problems with code and creating meaningful digital experiences.",
+  "home_btn_about": "Get to Know Me",
+  "home_btn_project": "See My Work",
+
+  "about_p1": "Hi, I’m Julia — a former HR professional now pursuing web development in Vancouver.",
+  "about_p2": "I enjoy turning ideas into interactive websites and solving problems with clean, user-friendly code.",
+  "about_p3": "With a background in business and a passion for learning, I’m currently studying at CICCC to sharpen my front-end and back-end skills.",
+  "about_p4": "My dream is to become a digital nomad and build meaningful, accessible web experiences.",
+
+  "project_title": "My projects",
+  "projects_movie_web": "Movie website",
+  "projects_simple_shopping_web": "Simple shopping website",
+  "See_All_Projects": "See All Projects",
+  "back": "Back",
+  
+  "contact_form_title": "Send me an email ~",
+  "contact_name": "Pleace leave your name",
+  "contact_email": "Pleace leave your email",
+  "contact_message": "Please leave a message here",
+  "contact_submit": "Submit",
+  "contact_clear": "Clear",
+  "contact_success": "Send successfully",
+  "contact_fail": "Send failed, please try again"
+}
