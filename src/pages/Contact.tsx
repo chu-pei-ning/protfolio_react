@@ -18,10 +18,10 @@ const Contact = ({ isDark }: Props) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      'service_pirb8os',
+      'template_aevr1ui',
       formRef.current!,
-      'YOUR_PUBLIC_KEY'
+      'tY7StYuJjS7lWHLwM'
     )
     .then(() => {
       toast.success(t("contact_success"));
