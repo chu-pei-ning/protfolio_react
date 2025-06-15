@@ -61,7 +61,7 @@ const Projects = ({ isDark }: Props) => {
       </h1>
 
       <div className="relative w-full flex justify-center items-center max-w-[800px]">
-        {/* 左右按鈕 */}
+        {/* 左按鈕 */}
         <button
           onClick={() => paginate(-1)}
           className="absolute left-0 z-10 text-2xl hover:scale-110 transition"
@@ -90,7 +90,7 @@ const Projects = ({ isDark }: Props) => {
             </motion.div>
           </AnimatePresence>
         </div>
-
+        {/* 右按鈕 */}
         <button
           onClick={() => paginate(1)}
           className="absolute right-0 z-10 text-2xl hover:scale-110 transition"

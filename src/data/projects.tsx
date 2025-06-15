@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiSass } from 'react-icons/si';
+import { SiReact, SiJavascript, SiSass, SiTypescript } from 'react-icons/si';
 import { FaCss3Alt } from 'react-icons/fa';
 
 export type Project = {
@@ -27,10 +27,14 @@ export const projects: Project[] = [
     imageLight: 'img/projects/simple_shopping_web.png',
     imageDark: 'img/projects/simple_shopping_web.png',
     techs: [
-      <SiReact className="text-cyan-400 text-xl" key="react" />,
+      <FaCss3Alt className="text-blue-500 text-xl" key="css" />,
       <SiJavascript className="text-yellow-400 text-xl" key="js" />,
     ],
     github: 'https://github.com/chu-pei-ning/oop-and-ts-shopping-web',
     demo: 'https://oop-and-ts-shopping-web.vercel.app/',
   }
 ];
+      // <SiReact className="text-cyan-400 text-xl" key="react" />,
+      // <SiTypescript className="text-blue-400 text-xl" key="ts" />,
+
+
