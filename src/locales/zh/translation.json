@@ -1,0 +1,34 @@
+{
+  "home": "首頁",
+  "about": "關於我",
+  "projects": "作品集",
+  "contact": "聯絡我",
+  "switch_lang": "English",
+
+  "home_title": "嗨，我是 祝珮寧",
+  "home_subtitle": "一位走在程式路上的創作者。",
+  "home_intro1": "喜歡將靈感化為能互動的網頁，讓想法在螢幕上發光。",
+  "home_intro2": "從文書工作者到程式工程師，在每一次解題中，看見世界的另一種秩序與美。",
+  "home_btn_about": "瞭解更多",
+  "home_btn_project": "觀看作品集",
+
+  "about_p1": "嗨，我是祝珮寧，來自台灣，現居溫哥華。",
+  "about_p2": "從人資轉職為網頁開發者，我熱愛將想法轉化為互動網站，並用程式解決問題。",
+  "about_p3": "我目前在 CICCC 學習全端開發，",
+  "about_p4": "目標是成為數位遊牧者，打造實用且有溫度的網站體驗。",
+
+  "project_title": "我的作品集",
+  "projects_movie_web": "電影網站",
+  "projects_simple_shopping_web": "簡易購物網站",
+  "See_All_Projects": "看全部作品",
+  "back": "回上一頁",
+
+  "contact_form_title": "寄封mail給我吧～",
+  "contact_name": "請留下您的姓名",
+  "contact_email": "請留下您的 e-mail",
+  "contact_message": "請留言給我",
+  "contact_submit": "送出",
+  "contact_clear": "重填",
+  "contact_success": "寄送成功",
+  "contact_fail": "抱歉，請再試一次"
+}
