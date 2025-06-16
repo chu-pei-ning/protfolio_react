@@ -4,6 +4,7 @@ import { IoIosSend, IoIosRefresh } from "react-icons/io";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import { motion } from 'framer-motion';
 
 type Props = {
   isDark: boolean;
@@ -36,7 +37,13 @@ const Contact = ({ isDark }: Props) => {
   return (
     <div>
       <Toaster />
-      <div className="h-[calc(100vh-128px)] px-6 flex items-center justify-center">
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: 200, opacity: 0 }}
+        transition={{ duration: 0.6 }}
+        className="h-[calc(100vh-128px)] px-6 flex items-center justify-center"
+      >
         <div className="w-full max-w-xl space-y-8">
           <div>
             <h1 className={`text-4xl font-bold ${isDark ? 'text-sky-400' : 'text-sky-600'}`}>
@@ -115,7 +122,7 @@ const Contact = ({ isDark }: Props) => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
