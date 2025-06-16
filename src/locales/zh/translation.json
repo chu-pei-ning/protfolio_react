@@ -5,7 +5,7 @@
   "contact": "聯絡我",
   "switch_lang": "English",
 
-  "home_title": "嗨，我是 祝珮寧",
+  "home_title": "  嗨，我是 祝珮寧",
   "home_subtitle": "一位走在程式路上的創作者。",
   "home_intro1": "喜歡將靈感化為能互動的網頁，讓想法在螢幕上發光。",
   "home_intro2": "從文書工作者到程式工程師，在每一次解題中，看見世界的另一種秩序與美。",
@@ -20,6 +20,7 @@
   "project_title": "我的作品集",
   "projects_movie_web": "電影網站",
   "projects_simple_shopping_web": "簡易購物網站",
+  "teamprojects_chatting_web": "[團隊合作]聊天網站",
   "See_All_Projects": "看全部作品",
   "back": "回上一頁",
 

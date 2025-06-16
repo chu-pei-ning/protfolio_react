@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 type Props = {
   isDark: boolean;
@@ -7,26 +9,67 @@ type Props = {
 
 const Home = ({ isDark }: Props) => {
   const { t } = useTranslation();
+  const fullTitle = t('home_title');
+  const [displayedTitle, setDisplayedTitle] = useState('');
+
+  // Typing effect
+  useEffect(() => {
+    let index = 0;
+    setDisplayedTitle('');
+    const interval = setInterval(() => {
+      setDisplayedTitle((prev) => prev + fullTitle.charAt(index));
+      index++;
+      if (index >= fullTitle.length) clearInterval(interval);
+    }, 80); // 文字間隔 ?ms
+    return () => clearInterval(interval);
+  }, [fullTitle]);
 
   return (
-    <div
-      className={`h-[calc(100vh-128px)] font-mono px-8 py-16 flex items-center justify-center`}    
-    >
+    <div className={`h-[calc(100vh-128px)] font-mono px-8 py-16 flex items-center justify-center`}>
       <div className="max-w-2xl space-y-6">
-        {/* Title */}
-        <h1 className={`text-5xl font-bold ${isDark ? 'text-sky-400' : 'text-sky-600'}`}>
-          {t('home_title')}
-        </h1>
-        <h2 className={`text-xl ${isDark ? 'text-slate-400' : 'text-gray-600'}`}>
+        {/* Title with typing effect */}
+        <motion.h1
+          className={`text-5xl font-bold ${isDark ? 'text-sky-400' : 'text-sky-600'}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          {displayedTitle}
+        </motion.h1>
+        <motion.h2
+          className={`text-xl ${isDark ? 'text-slate-400' : 'text-gray-600'}`}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.3 }}
+        >
           {t('home_subtitle')}
-        </h2>
+        </motion.h2>
 
         {/* Paragraphs */}
-        <p className="text-base leading-relaxed">{t('home_intro1')}</p>
-        <p className="text-base leading-relaxed">{t('home_intro2')}</p>
+        <motion.p
+          className="text-base leading-relaxed"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.6 }}
+        >
+          {t('home_intro1')}
+        </motion.p>
+        <motion.p
+          className="text-base leading-relaxed"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.9 }}
+        >
+          {t('home_intro2')}
+        </motion.p>
 
         {/* Buttons */}
-        <div className="flex gap-4 pt-4">
+        <motion.div
+          className="flex gap-4 pt-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 2.1 }}
+        >
           <Link
             to="/about"
             className={`px-5 py-2 border rounded-md transition duration-200 
@@ -45,7 +88,7 @@ const Home = ({ isDark }: Props) => {
           >
             {t('home_btn_project')}
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

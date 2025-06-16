@@ -1,5 +1,5 @@
-import { SiReact, SiJavascript, SiSass, SiTypescript } from 'react-icons/si';
-import { FaCss3Alt } from 'react-icons/fa';
+import { SiExpress, SiJavascript, SiSass, SiMongodb, SiAstro, SiTypescript } from 'react-icons/si';
+import { FaCss3Alt, FaNodeJs } from 'react-icons/fa';
 
 export type Project = {
   titlekey: string;
@@ -32,9 +32,19 @@ export const projects: Project[] = [
     ],
     github: 'https://github.com/chu-pei-ning/oop-and-ts-shopping-web',
     demo: 'https://oop-and-ts-shopping-web.vercel.app/',
+  },{
+    titlekey: 'teamprojects_chatting_web',
+    imageLight: 'img/projects/chattin_web.png',
+    imageDark: 'img/projects/chattin_web.png',
+    techs: [
+      <SiAstro className="text-purple-400 text-xl" key="Astro" />,
+      <FaNodeJs className="text-green-500 text-xl" key="Nodejs" />,
+      <SiExpress className="text-gray-400 text-xl" key="Express" />,
+      <SiMongodb className="text-green-700 text-xl" key="MongoDB" />,
+      <SiTypescript className="text-blue-400 text-xl" key="ts" />,
+    ],
+    github: 'https://github.com/chu-pei-ning/nodejs-chating_web',
+    demo: 'tt',
+
   }
 ];
-      // <SiReact className="text-cyan-400 text-xl" key="react" />,
-      // <SiTypescript className="text-blue-400 text-xl" key="ts" />,
-
-
